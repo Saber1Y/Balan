@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Navigation } from "@/components/navigation";
 import Warning from "@/components/dashboard/warning";
+import { PrivyWalletProvider } from "@/components/providers/PrivyProviders";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,9 +30,11 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Navigation />
-        <Warning />
-        {children}
+        <PrivyWalletProvider>
+          <Navigation />
+          <Warning />
+          {children}
+        </PrivyWalletProvider>
       </body>
     </html>
   );
