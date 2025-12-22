@@ -3,6 +3,7 @@ import { PoolOverview } from "@/components/pools/pool-overview";
 import { QuickActions } from "@/components/dashboard/quick-actions";
 import { RecentTransactions } from "@/components/dashboard/recent-transactions";
 import { PortfolioValue } from "@/components/dashboard/portfolio-value";
+import PieChartInGrid from "@/components/charts/pie-chart";
 
 export default function Dashboard() {
   return (
@@ -20,7 +21,7 @@ export default function Dashboard() {
             <PoolOverview />
           </div>
           <div className="space-y-6">
-            <QuickActions />
+            <PieChartInGrid />
             <RecentTransactions />
           </div>
         </div>
