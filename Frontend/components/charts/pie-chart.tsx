@@ -25,14 +25,14 @@ const MyPie = () => (
 
 export default function PieChartInGrid() {
   return (
-    <div style={{ width: "100%", minHeight: "500px" }}>
+    <div style={{ width: "100%", minHeight: "" }}>
       <PieChart
         responsive
         style={{
           gridColumn: "1 / 4",
           gridRow: "3 / 4",
           border: "1px solid #ddd",
-          height: "100%",
+          // height: "100%",
           // maxHeight: '200px',
           aspectRatio: 1,
           margin: "0 auto",

@@ -20,7 +20,7 @@ export default function Dashboard() {
             <PortfolioValue />
             <PoolOverview />
           </div>
-          <div className="space-y-6">
+          <div className="">
             <PieChartInGrid />
             <RecentTransactions />
           </div>
