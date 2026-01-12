@@ -5,6 +5,29 @@ import { RecentTransactions } from "@/components/dashboard/recent-transactions";
 import { PortfolioValue } from "@/components/dashboard/portfolio-value";
 import PieChartInGrid from "@/components/charts/pie-chart";
 
+const poolData = [
+  {
+    name: "WETH/USDC Pool",
+    symbol: "WETH",
+    description: "Wrapped Ether",
+    balance: "4.50 WETH",
+    usdValue: "$8,500",
+    allocation: "52%",
+    drift: "+2%",
+    target: "50%",
+  },
+  {
+    name: "WBTC/USDT Pool",
+    symbol: "WBTC",
+    description: "Wrapped Bitcoin",
+    balance: "1.25 WBTC",
+    usdValue: "$55,000",
+    allocation: "48%",
+    drift: "-1%",
+    target: "50%",
+  },
+];
+
 export default function Dashboard() {
   return (
     <div className="min-h-screen bg-zinc-50  p-6">
@@ -18,7 +41,8 @@ export default function Dashboard() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           <div className="lg:col-span-2 space-y-6">
             <PortfolioValue />
-            <PoolOverview />
+            <PoolOverview {...poolData[0]} />
+            <PoolOverview {...poolData[1]} />
           </div>
           <div className="">
             <PieChartInGrid />
