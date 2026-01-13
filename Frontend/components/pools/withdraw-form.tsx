@@ -16,7 +16,7 @@ export default function WithdrawForm() {
         <div>
           <div className="font-bold text-zinc-900">ETH</div>
         </div>
-        <span className="ml-auto text-xs text-zinc-500">
+        <span className="ml-auto text-md text-zinc-500">
           Available: 4.20 ETH
         </span>
       </div>
@@ -37,7 +37,7 @@ export default function WithdrawForm() {
         <div className="text-xs text-zinc-500 mt-1">≈ $0.00 USD</div>
       </div>
       <PortfolioImpact />
-      <div className="flex flex-col gap-1 text-xs text-zinc-500 mt-2">
+      <div className="flex flex-col gap-1 text-md text-zinc-500 mt-2">
         <span>Exchange Rate: 1 ETH = 2,250 USDC</span>
         <span>Slippage Tolerance: 0.5%</span>
         <span>Network Cost: ~$4.50 (0.002 ETH)</span>
@@ -73,15 +73,17 @@ function PortfolioImpact() {
           className="h-3 bg-blue-400 rounded-full absolute left-1/2 top-0"
           style={{ width: "50%" }}
         ></div>
+
+        <div className="flex justify-center text-red-400 bg-red-400 my-2" />
         {/* Projected bar overlay */}
-        <div
+        {/* <div
           className="h-3 bg-blue-600/70 rounded-full absolute left-0 top-0"
           style={{ width: "42%" }}
         ></div>
         <div
           className="h-3 bg-blue-400/70 rounded-full absolute left-[42%] top-0"
           style={{ width: "58%" }}
-        ></div>
+        ></div> */}
       </div>
       <div className="flex justify-between text-xs text-zinc-500">
         <div>
