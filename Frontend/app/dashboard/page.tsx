@@ -4,6 +4,8 @@ import { QuickActions } from "@/components/dashboard/quick-actions";
 import { RecentTransactions } from "@/components/dashboard/recent-transactions";
 import { PortfolioValue } from "@/components/dashboard/portfolio-value";
 import PieChartInGrid from "@/components/charts/pie-chart";
+import StrategyActions from "@/components/dashboard/strategy-actions";
+import RecentActivity from "@/components/dashboard/recent-activity";
 
 const poolData = [
   {
@@ -48,6 +50,10 @@ export default function Dashboard() {
             <PieChartInGrid />
             <RecentTransactions />
           </div>
+        </div>
+        <div className="flex flex-col gap-6">
+          <StrategyActions />
+          <RecentActivity />
         </div>
       </div>
     </div>
