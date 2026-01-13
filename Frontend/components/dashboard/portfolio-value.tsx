@@ -14,7 +14,7 @@ export const PortfolioValue = () => {
   };
 
   return (
-    <Card>
+    <Card className="rounded-2xl shadow-sm p-6 bg-white gap-6">
       <CardHeader>
         <CardTitle>Total Portfolio Value</CardTitle>
       </CardHeader>

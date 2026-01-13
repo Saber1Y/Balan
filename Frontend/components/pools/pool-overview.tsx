@@ -1,4 +1,5 @@
 import { Card } from "@/components/ui/card";
+import Image from "next/image";
 
 interface PoolOverviewProps {
   name: string;
@@ -9,7 +10,7 @@ interface PoolOverviewProps {
   allocation: string;
   drift: string;
   target: string;
-  iconUrl?: string; // Optional icon for the token
+  iconUrl?: string;
 }
 
 function getDriftColor(drift: string) {
@@ -40,7 +41,7 @@ export const PoolOverview = ({
         <div className="flex items-center gap-4">
           <div className="w-12 h-12 rounded-full bg-zinc-100 flex items-center justify-center">
             {iconUrl ? (
-              <img src={iconUrl} alt={symbol} className="w-7 h-7" />
+              <Image src={iconUrl} alt={symbol} className="w-7 h-7" />
             ) : (
               <span className="text-2xl">💎</span>
             )}
