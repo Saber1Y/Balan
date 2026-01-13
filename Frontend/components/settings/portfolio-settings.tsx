@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import PieChartInGrid from "../charts/pie-chart";
 
 export default function PortfolioSettings() {
   const [weth, setWeth] = useState(50);
@@ -22,7 +23,8 @@ export default function PortfolioSettings() {
       </div>
       <div className="flex items-center gap-6 mb-4">
         <div className="flex flex-col items-center">
-          <div className="w-20 h-20 rounded-full bg-zinc-50 flex items-center justify-center mb-2">
+          <PieChartInGrid weth={weth} usdc={usdc} />
+          {/* <div className="w-20 h-20 rounded-full bg-zinc-50 flex items-center justify-center mb-2">
             <svg width="60" height="60" viewBox="0 0 36 36">
               <circle cx="18" cy="18" r="16" fill="#f1f5f9" />
               <circle
@@ -56,7 +58,7 @@ export default function PortfolioSettings() {
                 {weth}/{usdc}
               </text>
             </svg>
-          </div>
+          </div> */}
         </div>
         <div className="flex-1 flex flex-col gap-3">
           <div className="flex items-center gap-2">
