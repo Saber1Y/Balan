@@ -1,11 +1,18 @@
+import eth from "../../public/eth.svg";
+import Image from "next/image";
+
 export default function WithdrawForm() {
   return (
-    <div className="bg-white rounded-2xl shadow-sm p-6 flex flex-col gap-6 w-full max-w-xl">
+    <div className="bg-white rounded-2xl shadow-sm p-6 flex flex-col gap-6 w-full max-w-xxl">
       <div className="font-semibold text-zinc-900 text-lg mb-2">
         Select Asset & Amount
       </div>
       <div className="flex items-center gap-3 bg-zinc-50 rounded-xl p-4 mb-4">
-        <span className="bg-zinc-100 rounded-full p-2 text-2xl">🪙</span>
+        <Image
+          src={eth}
+          alt="ETH"
+          className="bg-zinc-100 rounded-full p-2 text-2xl w-8"
+        />
         <div>
           <div className="font-bold text-zinc-900">ETH</div>
         </div>

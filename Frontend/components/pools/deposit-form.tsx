@@ -2,8 +2,8 @@ import SimulationPreview from "./simulation-preview";
 
 export default function DepositForm() {
   return (
-    <main className="flex  gap-8">
-      <div className="bg-white rounded-2xl shadow-sm p-6 flex md:flex-col gap-6 w-full max-w-xl">
+    <main className="flex justify-between gap-8">
+      <div className="bg-white rounded-2xl shadow-sm p-6 flex md:flex-col gap-6 w-full max-w-xxl">
         <div className="font-semibold text-zinc-900 text-lg mb-2">
           Select Token
         </div>
