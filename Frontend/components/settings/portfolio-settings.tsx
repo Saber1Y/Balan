@@ -62,7 +62,7 @@ export default function PortfolioSettings() {
         </div>
         <div className="flex-1 flex flex-col gap-3">
           <div className="flex items-center gap-2">
-            <span className="bg-zinc-100 rounded-full p-2 text-lg">W</span>
+          
             <span className="font-semibold text-zinc-900">WETH</span>
             <input
               type="number"
