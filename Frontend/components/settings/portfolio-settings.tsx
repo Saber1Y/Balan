@@ -61,9 +61,10 @@ export default function PortfolioSettings() {
           </div> */}
         </div>
         <div className="flex-1 flex flex-col gap-3">
-          <div className="flex items-center gap-2">
-          
-            <span className="font-semibold text-zinc-900">WETH</span>
+          <div className="flex items-center gap-2 border p-3">
+            {/* add logo here later */}
+
+            <span className="font-semibold text-black">WETH</span>
             <input
               type="number"
               min={0}
@@ -72,20 +73,19 @@ export default function PortfolioSettings() {
               onChange={(e) =>
                 handleSlider({ target: { value: e.target.value } } as any)
               }
-              className="w-16 ml-2 rounded-lg border border-zinc-200 p-2 text-center"
+              className="w-16 ml-2 rounded-lg border border-zinc-200 p-2 text-center text-black"
             />
             <span className="text-zinc-500">%</span>
           </div>
-          <div className="flex items-center gap-2">
-            <span className="bg-zinc-100 rounded-full p-2 text-lg">S</span>
-            <span className="font-semibold text-zinc-900">USDC</span>
+          <div className="flex items-center gap-2 border p-3">
+            <span className="font-semibold text-black">USDC</span>
             <input
               type="number"
               min={0}
               max={100}
               value={usdc}
               readOnly
-              className="w-16 ml-2 rounded-lg border border-zinc-200 p-2 text-center bg-zinc-50"
+              className="w-16 ml-2 rounded-lg border border-zinc-200 p-2 text-center bg-zinc-50 text-black"
             />
             <span className="text-zinc-500">%</span>
           </div>

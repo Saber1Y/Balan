@@ -14,7 +14,7 @@ export default function RebalancingRules() {
       <div className="text-zinc-500 text-sm mb-4">
         Configure when the system should act.
       </div>
-      <div className="flex items-center justify-between mb-2">
+      <div className="flex items-center justify-between mb-2 text-black">
         <span>Deviation Threshold</span>
         <span className="text-blue-600 font-bold cursor-pointer">
           {deviation.toFixed(1)}%
@@ -34,7 +34,7 @@ export default function RebalancingRules() {
         <span>10% (Loose)</span>
       </div>
       <div className="mb-4">
-        <div className="flex items-center justify-between mb-2">
+        <div className="flex items-center justify-between mb-2 text-black">
           <span>Check Interval</span>
           <select
             value={interval}
@@ -51,7 +51,7 @@ export default function RebalancingRules() {
           More frequent checks may incur higher Chainlink keeper costs.
         </div>
       </div>
-      <div className="flex items-center justify-between mt-2">
+      <div className="flex items-center justify-between mt-2 text-black">
         <span>Auto-Rebalance</span>
         <label className="inline-flex items-center cursor-pointer">
           <input
