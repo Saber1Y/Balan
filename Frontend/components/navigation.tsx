@@ -7,7 +7,7 @@ import { WalletConnect } from "./wallet/WalletConnect";
 const navigation = [
   { name: "Dashboard", href: "/dashboard" },
   { name: "Pools", href: "/pools" },
-  { name: "Portfolio", href: "/portfolio" },
+  { name: "History", href: "/history" },
   { name: "Settings", href: "/settings" },
 ];
 
