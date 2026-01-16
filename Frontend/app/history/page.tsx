@@ -1,4 +1,3 @@
-
 import HistoryStats from "@/components/history/history-stats";
 import HistoryFilters from "@/components/history/history-filters";
 import HistoryActivity from "@/components/history/history-activity";
@@ -8,9 +7,9 @@ export default function Portfolio() {
     <div className="min-h-screen bg-zinc-50 p-6">
       <div className="max-w-7xl mx-auto space-y-6">
         <div className="mt-12">
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between mb-4">
             <div>
-              <h1 className="text-3xl font-bold text-zinc-900 dark:text-zinc-50 mb-1">
+              <h1 className="text-3xl font-bold text-zinc-900  mb-1">
                 Portfolio History
               </h1>
               <p className="text-zinc-500 text-base">

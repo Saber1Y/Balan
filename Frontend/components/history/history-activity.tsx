@@ -8,7 +8,7 @@ const today = [
     time: "2 hours ago",
     tx: "0x88...21",
     txUrl: "#",
-    icon: "\uD83D\uDEE0\uFE0F", // 🛠️
+    icon: "",
     color: "bg-blue-50",
     label: "success",
   },
@@ -21,8 +21,8 @@ const today = [
     time: "5 hours ago",
     tx: "0x12...99",
     txUrl: "#",
-    icon: "\uD83D\uDCB0", // 💰
-    color: "bg-green-50",
+    icon: "",
+    color: "bg-blue-50",
     label: "completed",
   },
 ];
@@ -37,8 +37,8 @@ const yesterday = [
     time: "Yesterday, 4:30 PM",
     tx: "0x45...ab",
     txUrl: "#",
-    icon: "\uD83D\uDCCB", // 📋
-    color: "bg-orange-50",
+    icon: "",
+    color: "bg-blue-50",
     label: "config",
   },
   {
@@ -50,7 +50,7 @@ const yesterday = [
     time: "Yesterday, 9:15 AM",
     tx: "0x99...ff",
     txUrl: "#",
-    icon: "\uD83D\uDEE0\uFE0F", // 🛠️
+    icon: "",
     color: "bg-blue-50",
     label: "success",
   },
