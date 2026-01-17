@@ -9,7 +9,6 @@ const today = [
     tx: "0x88...21",
     txUrl: "#",
     icon: "",
-    color: "bg-blue-50",
     label: "success",
   },
   {
@@ -22,7 +21,6 @@ const today = [
     tx: "0x12...99",
     txUrl: "#",
     icon: "",
-    color: "bg-blue-50",
     label: "completed",
   },
 ];
@@ -38,7 +36,6 @@ const yesterday = [
     tx: "0x45...ab",
     txUrl: "#",
     icon: "",
-    color: "bg-blue-50",
     label: "config",
   },
   {
@@ -51,16 +48,26 @@ const yesterday = [
     tx: "0x99...ff",
     txUrl: "#",
     icon: "",
-    color: "bg-blue-50",
     label: "success",
   },
 ];
 
-function ActivityCard({ item }: { item: any }) {
+interface ActivityItem {
+  type: string;
+  status: string;
+  details: string;
+  gas: string;
+  triggered: string;
+  time: string;
+  tx: string;
+  txUrl: string;
+  icon: string;
+  label: string;
+}
+
+function ActivityCard({ item }: { item: ActivityItem }) {
   return (
-    <div
-      className={`rounded-2xl p-5 mb-4 flex flex-col gap-2 shadow-sm ${item.color}`}
-    >
+    <div className="rounded-2xl p-5 mb-4 flex flex-col gap-2 shadow-sm">
       <div className="flex items-center gap-2 mb-1">
         <span className="text-2xl">{item.icon}</span>
         <span className="font-semibold text-zinc-900">{item.type}</span>
