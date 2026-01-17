@@ -2,6 +2,27 @@ import { FaGasPump } from "react-icons/fa";
 import { MdOutlineShowChart } from "react-icons/md";
 import { SiConfluence } from "react-icons/si";
 
+const HistoryStatsData = [
+  {
+    icon: <FaGasPump />,
+    title: "Total Gas Spent",
+    amount: "0.45 ETH",
+    price: "845.20",
+  },
+  {
+    icon: <SiConfluence />,
+    title: "Total Rebalances",
+    amount: "142",
+    price: "",
+  },
+  {
+    icon: <MdOutlineShowChart />,
+    title: "Net Volume",
+    amount: "$1.2M",
+    price: "",
+  },
+];
+
 export default function HistoryStats() {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">

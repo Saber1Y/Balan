@@ -1,3 +1,6 @@
+import Link from "next/link";
+import { RiExternalLinkFill } from "react-icons/ri";
+
 const today = [
   {
     type: "Auto-Rebalance Executed",
@@ -72,25 +75,28 @@ function ActivityCard({ item }: { item: ActivityItem }) {
         <span className="text-2xl">{item.icon}</span>
         <span className="font-semibold text-zinc-900">{item.type}</span>
         {item.label === "success" && (
-          <span className="ml-2 px-2 py-0.5 rounded bg-blue-100 text-blue-600 text-xs font-bold">
+          <span className="ml-2 px-2 py-0.5 rounded bg-blue-100 text-blue-600 text-md  font-bold">
             success
           </span>
         )}
       </div>
       <div className="text-zinc-900 text-sm">{item.details}</div>
-      <div className="flex items-center gap-4 text-xs text-zinc-500">
+      <div className="flex items-center gap- text-zinc-500">
         <span>{item.gas}</span>
         {item.triggered !== "-" && <span>• {item.triggered}</span>}
       </div>
-      <div className="flex justify-between items-center text-xs text-zinc-400 mt-1">
+      <div className="flex justify-between items-center text-md font-medium text-zinc-400 mt-1">
         <span>{item.time}</span>
+
         <a
           href={item.txUrl}
-          className="text-blue-600 hover:underline"
+          className="text-blue-600 hover:underline flex gap-2 items-center"
           target="_blank"
           rel="noopener noreferrer"
         >
           {item.tx}
+
+          <RiExternalLinkFill />
         </a>
       </div>
     </div>
@@ -100,11 +106,11 @@ function ActivityCard({ item }: { item: ActivityItem }) {
 export default function HistoryActivity() {
   return (
     <div className="mt-6">
-      <div className="mb-2 text-xs text-zinc-500 font-semibold">TODAY</div>
+      <div className="mb-2 text-md  text-zinc-500 font-semibold">TODAY</div>
       {today.map((item, i) => (
         <ActivityCard key={i} item={item} />
       ))}
-      <div className="mb-2 mt-6 text-xs text-zinc-500 font-semibold">
+      <div className="mb-2 mt-6 text-md  text-zinc-500 font-semibold">
         YESTERDAY
       </div>
       {yesterday.map((item, i) => (
