@@ -36,7 +36,7 @@ export default function DepositForm() {
           <span className="text-xs">0.002 ETH</span>
         </div>
         <button className="w-full bg-blue-600 text-white font-semibold rounded-xl py-3 text-lg flex items-center justify-center gap-2 shadow">
-          <span className="text-xl">💳</span> Deposit & Rebalance
+          Deposit & Rebalance
         </button>
         <div className="text-xs text-zinc-400 text-center mt-2">
           POWERED BY UNISWAP V2

@@ -2,7 +2,7 @@ export default function IntegrationStatus() {
   return (
     <div className="bg-white rounded-2xl shadow-sm p-6 mt-4">
       <div className="font-semibold text-zinc-900 text-lg mb-3 flex items-center gap-2">
-        <span className="text-xl">✳️</span> Integration & Security Status
+        Integration & Security Status
       </div>
       <div className="flex gap-4 mb-2">
         <div className="flex items-center gap-2 bg-green-50 rounded-lg px-4 py-2">
